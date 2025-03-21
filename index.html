@@ -7,10 +7,25 @@
   <link rel="stylesheet" href="./css/styles.css">
   <title>TinDog</title>
 
+
   <!-- add bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
- 
+  <style>
+    /* make the background behind the text in the 'Mastiff' pricing option black */
+    .custom-header {
+      background-color: black; /* black background */
+    }
+
+    /* gives the footer and the title sections a gradient background  */
+    .gradient-background {
+      background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+    }
+
+  </style>
+
   
 </head>
 
@@ -19,7 +34,7 @@
   <!-- Title -->
   <section id="title">
 
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-xxl-8 px-4 py-5 gradient-background">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
           <img src="./images/iphone.png" class="d-block mx-lg-auto img-fluid" alt="screenshot of a dog on Tindog" width="700" height="500" loading="lazy">
@@ -93,7 +108,7 @@
   <section id="testimonial">
     <div class="p-5 text-center bg-body-tertiary">
       <div class="container py-5">
-        <h3 class="text-body-emphasis">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h3>
+        <h2 class="text-body-emphasis">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
         <img src="./images/dog-img.jpg" class="d-block mx-auto img-fluid" alt="dog-img" width="100" height="100" loading="lazy">
         <p class="col-lg-8 mx-auto lead">
           Pebbles, New York
@@ -108,7 +123,7 @@
 
     <!-- title for the pricing section -->
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal text-body-emphasis">A Plan for Every Dog's Needs</h1>
+      <h2 class="display-4 fw-normal text-body-emphasis">A Plan for Every Dog's Needs</h2>
       <p class="fs-5 text-body-secondary">Simple and affordable price plans for you and your dog.</p>
     </div>
 
@@ -149,9 +164,10 @@
         </div>
       </div>
       <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary" style="border-color: black;">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary" style="border-color: black !important;">
 
-          <div class="card-header py-3 text-bg-primary border-primary">
+          <!-- added inline css to... -->
+          <div class="card-header py-3 text-bg-primary border-primary custom-header" style="border-color: black !important;">
             <!-- added inline css to make the text white -->
             <h4 class="my-0 fw-normal" style="color: white;">Mastiff</h4>
           </div>
@@ -174,7 +190,7 @@
    <div class="container">
    
     <section id="footer">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top gradient-background">
         <div class="col mb-3">
           <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
