@@ -123,19 +123,40 @@
   </section>
   <!-- Testimonial -->
   <section id="testimonial">
-    <div class="p-5 text-center bg-body-tertiary">
-      <div class="container py-5">
-        <h2 class="text-body-emphasis">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-        <!-- add a margin of 5 at the top of the image -->
-        <img src="./images/dog-img.jpg" class="d-block mx-auto img-fluid profile-img mt-5 mb-2" alt="dog-img" width="100" height="100" loading="lazy">
-        <!-- a margin of 2 at the top of the paragraph -->
-        <p class="col-lg-8 mx-auto lead mt-2">
-          Pebbles, New York
-        </p>
+    <div class="my-5">
+      <div class="p-5 text-center bg-body-tertiary">
+        <div class="container py-5">
+          <h2 class="text-body-emphasis">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <!-- add a margin of 5 at the top of the image -->
+          <img src="./images/dog-img.jpg" class="d-block mx-auto img-fluid profile-img mt-5 mb-2" alt="dog-img" width="100" height="100" loading="lazy">
+          <!-- a margin of 2 at the top of the paragraph -->
+          <p class="col-lg-8 mx-auto lead mt-2">
+            Pebbles, New York
+          </p>
+        </div>
         <!-- create a single row of images here -->
+         <div class="container">
+          <div class="row">
+            <!-- col-sm-12 makes the element take up the full width on small devices and larger. 
+             col-lg-3 will apply only when the screen width is 992px or larger; On large devices (≥992px), 
+             the column takes up 3 columns (25% width).ß
+            -->
+            <div class="col-lg-3 col-sm-12">
+              <img style="height: 30px;" src="./images/techcrunch.png" alt="techcrunch">
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <img style="height: 30px;" src="./images/mashable.png" alt="mashable">
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <img style="height: 30px;" src="./images/bizinsider.png" alt="bizinsider">
+            </div>
+            <div class="col-lg-3 col-sm-12">
+              <img style="height: 30px;" src="./images/tnw.png" alt="tmw">
+            </div>
+          </div>
+         </div>
       </div>
     </div>
-
   </section>
   <!-- Pricing -->
   <section id="pricing">
@@ -146,59 +167,62 @@
       <p class="fs-5 text-body-secondary">Simple and affordable price plans for you and your dog.</p>
     </div>
 
-    <!-- cards that show the different pricing plans -->
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Chihuahua</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>5 Matches Per Day</li>
-              <li>10 Messages Per Day</li>
-              <li>Unlimited App Usage</li>
-            </ul>
-            <!-- added inline css to make the color of the text black & the border of the button black -->
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="color: black; border-color: black; ">Sign up for free</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Labrador</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Unlimited Matches</li>
-              <li>Unlimited Messages</li>
-              <li>Unlimited App Usage</li>
-            </ul>
-            <!-- added inline css to make the text white, the color of the button black, & the border of the button black -->
-            <button type="button" class="w-100 btn btn-lg btn-primary" style="color: white; background-color: black; border: black">Get started</button>
+    <!-- cards must go inside of a container  -->
+    <div class="container">
+      <!-- cards that show the different pricing plans -->
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Chihuahua</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>5 Matches Per Day</li>
+                <li>10 Messages Per Day</li>
+                <li>Unlimited App Usage</li>
+              </ul>
+              <!-- added inline css to make the color of the text black & the border of the button black -->
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="color: black; border-color: black; ">Sign up for free</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary" style="border-color: black !important;">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Labrador</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Unlimited Matches</li>
+                <li>Unlimited Messages</li>
+                <li>Unlimited App Usage</li>
+              </ul>
+              <!-- added inline css to make the text white, the color of the button black, & the border of the button black -->
+              <button type="button" class="w-100 btn btn-lg btn-primary" style="color: white; background-color: black; border: black">Get started</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-dark" style="border-color: black !important;">
 
-          <!-- added inline css to... -->
-          <div class="card-header py-3 text-bg-primary border-primary custom-header" style="border-color: black !important;">
-            <!-- added inline css to make the text white -->
-            <h4 class="my-0 fw-normal" style="color: white;">Mastiff</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Priority Listing</li>
-              <li>Unlimited Matches & Messages</li>
-              <li>Unlimted App Usage</li>
-            </ul>
-            <!-- added inline css to make the text white, the color of the button black, & the border of the button black -->
-            <button type="button" class="w-100 btn btn-lg btn-primary" style="color: white; background-color: black; border: black">Contact us</button>
+            <!-- added inline css to... -->
+            <div class="card-header py-3 text-bg-primary custom-header border-dark" style="border-color: black !important;">
+              <!-- added inline css to make the text white -->
+              <h4 class="my-0 fw-normal" style="color: white;">Mastiff</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Priority Listing</li>
+                <li>Unlimited Matches & Messages</li>
+                <li>Unlimted App Usage</li>
+              </ul>
+              <!-- added inline css to make the text white, the color of the button black, & the border of the button black -->
+              <button type="button" class="w-100 btn btn-lg btn-primary" style="color: white; background-color: black; border: black">Contact us</button>
+            </div>
           </div>
         </div>
       </div>
@@ -208,8 +232,9 @@
   <!-- Footer -->
   <!-- gives the footer section a gradient background -->
   <section id="footer" class="gradient-background">
-    <div class="container"></div>
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="container">
+      <!-- add a margin of 5 to the top of the footer -->
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5">
         <div class="col mb-3">
           <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
@@ -255,6 +280,7 @@
         </div>
       </footer>
 
+      </div>
     </div>
   </section>
 
