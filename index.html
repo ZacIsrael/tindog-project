@@ -24,6 +24,13 @@
       animation: gradient-animation 18s ease infinite;
     }
 
+    /* override the class for the svg icons in the features section  */
+    .feature-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.75rem;
+    }
+
   </style>
 
   
@@ -36,6 +43,7 @@
   <section id="title" class="gradient-background">
     <!-- pt-5: padding at the top of 5 -->
     <div class="container col-xxl-8 px-4 pt-5">
+      <!-- pt-5: padding at the top of 5 -->
       <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
         <div class="col-10 col-sm-8 col-lg-6">
           <img src="./images/iphone.png" class="d-block mx-lg-auto img-fluid" alt="screenshot of a dog on Tindog" height="200" loading="lazy">
@@ -67,7 +75,8 @@
   </section>
   <!-- Features -->
   <section id="features">
-    <div class="container px-4 py-5" id="featured-3">
+    <!-- mt-5: add a margin of 5 to the top of this section -->
+    <div class="container mt-5" id="featured-3">
       <!-- <h2 class="pb-2 border-bottom">Columns with icons</h2> -->
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="feature col">
@@ -80,10 +89,6 @@
           </div>
           <h3 class="fs-2 text-body-emphasis">Easy to use.</h3>
           <p>So easy to use, even your dog could do it.</p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-          </a>
         </div>
         <div class="feature col">
           <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
@@ -94,10 +99,6 @@
           </div>
           <h3 class="fs-2 text-body-emphasis">Elite Clientele.</h3>
           <p>We have all the dogs, the greatest dogs.</p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-          </a>
         </div>
         <div class="feature col">
           <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
@@ -108,10 +109,6 @@
           </div>
           <h3 class="fs-2 text-body-emphasis">Guaranteed to work.</h3>
           <p>Find the love of your dog's life or your money back.</p>
-          <a href="#" class="icon-link">
-            Call to action
-            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-          </a>
         </div>
       </div>
     </div>
