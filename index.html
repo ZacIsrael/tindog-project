@@ -32,10 +32,11 @@
 <body>
 
   <!-- Title -->
-  <section id="title">
-
-    <div class="container col-xxl-8 px-4 py-5 gradient-background">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+  <!-- gives the title section a gradient background -->
+  <section id="title" class="gradient-background">
+    <!-- pt-5: padding at the top of 5 -->
+    <div class="container col-xxl-8 px-4 pt-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
         <div class="col-10 col-sm-8 col-lg-6">
           <img src="./images/iphone.png" class="d-block mx-lg-auto img-fluid" alt="screenshot of a dog on Tindog" height="200" loading="lazy">
         </div>
@@ -199,10 +200,10 @@
 
   </section>
   <!-- Footer -->
-   <div class="container">
-   
-    <section id="footer">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top gradient-background">
+  <!-- gives the footer section a gradient background -->
+  <section id="footer" class="gradient-background">
+    <div class="container"></div>
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
         <div class="col mb-3">
           <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
@@ -248,8 +249,9 @@
         </div>
       </footer>
 
-    </section>
-</div>
+    </div>
+  </section>
+
 
 <!-- gives the document access to the Bootstrap JavaScript plugins -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
